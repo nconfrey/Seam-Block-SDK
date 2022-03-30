@@ -1,0 +1,12 @@
+{
+  "name": "example-card",
+  "displayName": "example-card",
+  "expo": {
+    "name": "example-card",
+    "slug": "example-card",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
