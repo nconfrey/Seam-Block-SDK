@@ -5,7 +5,8 @@ import { getBlockData, setBlockData } from 'seam-data-layer';
 import { getOwners } from 'seam-owners-api';
 
 const Counter = () => {
-    const [count, setCount] = useState(0)
+    const startingCount = getBlockData("count")
+    const [count, setCount] = useState(startingCount)
     const owners = getOwners()
     const user1 = owners[0]
     const user2 = owners[1]
@@ -13,7 +14,7 @@ const Counter = () => {
         <Card>
             <View style={{ flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between" }}>
                 <Text>{user1.name + "'s and " + user2.name + "'s button."}</Text>
-                <Button onPress={() => {setCount(count + 1); setBlockData(count)}} title="Press Me!" />
+                <Button onPress={() => {setCount(count + 1); setBlockData("count", count)}} title="Press Me!" />
                 <Text>Pressed {count} times!</Text>
             </View>
         </Card>
