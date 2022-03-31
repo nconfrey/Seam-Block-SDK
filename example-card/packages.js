@@ -5,6 +5,7 @@ import * as ReactNativeElements from "react-native-elements";
 import * as ReactNavigationNative from "@react-navigation/native";
 import * as Icons from "react-native-vector-icons";
 import * as Database from "./seam-data-layer";
+import * as Owners from "./seam-owners-api";
 const Packages = {
     "react": () => React,
     "react-native": () => ReactNative,
@@ -13,6 +14,7 @@ const Packages = {
     "@react-navigation/native": () => ReactNavigationNative,
     "react-native-vector-icons": () => Icons,
     "seam-data-layer": () => Database,
+    "seam-owners-api": () => Owners
 }
 
 
