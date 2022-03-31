@@ -4,13 +4,15 @@ import * as ReactRedux from "react-redux";
 import * as ReactNativeElements from "react-native-elements";
 import * as ReactNavigationNative from "@react-navigation/native";
 import * as Icons from "react-native-vector-icons";
+import * as Database from "./seam-data-layer";
 const Packages = {
     "react": () => React,
     "react-native": () => ReactNative,
     "react-redux": () => ReactRedux,
     "react-native-elements": () => ReactNativeElements,
     "@react-navigation/native": () => ReactNavigationNative,
-    "react-native-vector-icons": () => Icons
+    "react-native-vector-icons": () => Icons,
+    "seam-data-layer": () => Database,
 }
 
 

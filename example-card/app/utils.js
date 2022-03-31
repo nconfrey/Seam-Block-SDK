@@ -23,6 +23,7 @@ export async function fetchComponent(id) {
     try {
         const text = await fetch(`http://192.168.1.156:8080/${id}.js?time=${Date.now()}`, {
             headers: {
+                // This is only for the test enviroment
                 'Access-Control-Allow-Origin':'*'
               }
         }).then(a => {
