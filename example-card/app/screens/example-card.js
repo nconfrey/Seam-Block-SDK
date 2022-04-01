@@ -1,3 +1,12 @@
+/*
+
+This is an example card that hosts the blocks, so you can have a sense of what your block will look like in someone's card.
+
+Feel free to mess around in here, but it won't change anything about the production version of the Seam app.
+
+*/
+
+
 import React, { useState } from 'react'
 import { StyleSheet, Switch, TouchableOpacity, View, ScrollView } from 'react-native'
 import { Text, Button, Input } from 'react-native-elements'
@@ -6,7 +15,7 @@ import { addTodo, toggleTodo } from '../store/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
-const HomePage = ({ navigation }) => {
+const ExampleCard = ({ navigation }) => {
     const [showDynamicComponents, setShowDynamicComponents] = useState(false);
     const [todoText, setTodoText] = useState("");
 
@@ -83,13 +92,12 @@ const HomePage = ({ navigation }) => {
     )
     return (
         <ScrollView style={{ padding: 10, flex: 1 }}>
-            {renderTodoSection()}
             {renderDynamicComponentsSwitch()}
             {renderDynamicComponents()}
         </ScrollView>
     )
 }
 
-export default HomePage
+export default ExampleCard
 
 const styles = StyleSheet.create({})

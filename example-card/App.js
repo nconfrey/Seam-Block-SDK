@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import HomePage from './app/screens/home-page';
+import ExampleCard from './app/screens/example-card';
 import configureStore from "./app/store/store"
 import { Provider } from 'react-redux';
 import DynamicComponent from './app/components/dynamic-component';
@@ -18,7 +18,7 @@ export default function App() {
       <SafeAreaProvider>
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen name="Home" component={HomePage} />
+            <Stack.Screen name="Home" component={ExampleCard} />
             <Stack.Screen name="NewPage" >
               {() => <DynamicComponent __id="new-page" />}
             </Stack.Screen>
