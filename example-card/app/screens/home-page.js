@@ -17,7 +17,7 @@ const HomePage = ({ navigation }) => {
 
     const renderDynamicComponentsSwitch = () => (
         <View style={{ flexDirection: "row", justifyContent: "space-between", marginTop: 15 }}>
-            <Text style={{ fontSize: 20, fontWeight: "bold" }}>Toggle remote components</Text>
+            <Text style={{ fontSize: 20, fontWeight: "bold" }}>Toggle remote blocks</Text>
             <Switch
                 trackColor={{ false: "#767577", true: "#79addb" }}
                 thumbColor={showDynamicComponents ? "#3480eb" : "#f4f3f4"}
