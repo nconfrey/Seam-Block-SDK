@@ -17,8 +17,8 @@ export default function App() {
     <Provider store={store}>
       <SafeAreaProvider>
         <NavigationContainer>
-          <Stack.Navigator initialRouteName="Home">
-            <Stack.Screen name="Home" component={ExampleCard} />
+          <Stack.Navigator initialRouteName="Seam Example Card">
+            <Stack.Screen name="Seam Example Card" component={ExampleCard} />
             <Stack.Screen name="NewPage" >
               {() => <DynamicComponent __id="new-page" />}
             </Stack.Screen>
