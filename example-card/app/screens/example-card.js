@@ -41,6 +41,7 @@ const ExampleCard = ({ navigation }) => {
         <>
             {showDynamicComponents && (
                 <View style={{ paddingVertical: 15 }}>
+                    <DynamicComponent __id="header" />
                     <DynamicComponent __id="counter" />
                     <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                         <View style={{ flex: 1 }}>

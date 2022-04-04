@@ -9,8 +9,8 @@ This API is obviously mocked, but when your block is hosted inside the Seam app,
 
 // Feel free to customize these to your own names :)
 // Don't add extra keys though, those won't be fetchable in production.
-const user1 = {name: "Nick", pictureURL: ""}
-const user2 = {name: "Katy", pictureURL: ""}
+const user1 = {name: "Nick", pictureURL: "https://pbs.twimg.com/profile_images/1498743622581121026/JatkpfN4_400x400.jpg"}
+const user2 = {name: "Katy", pictureURL: "https://pbs.twimg.com/profile_images/1498743622581121026/JatkpfN4_400x400.jpg"}
 
 export function getOwners() {
     return [user1, user2]
