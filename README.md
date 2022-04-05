@@ -19,6 +19,16 @@ This repo will contain everything you need to make your first block that will ru
 2. Run `npm install` from root
 
 ### Developing:
+Run the block server:
+```
+$ cd blocks
+$ npm run build
+$ npm start
+```
+
+`npm run build` builds the components, and makes sure the output is in the `dist` folder.
+
+See the block file hierarchy at http://127.0.0.1:8080/.
 
 Run the example card:
 ```
@@ -27,18 +37,17 @@ $ expo start
 ```
 Learn more about expo to see how to run the example card on iOS, Android, or Web.
 
-Run the block server:
-```
-$ cd blocks
-$ npm start
-```
-See the block file hierarchy at http://127.0.0.1:8080/.
+I suggest looking at the `blocks/counter.js` for the most basic block as a template. As an example with more css styles and images, try `header.js`.
 
-I suggest looking at the `blocks/counter.js` for the most basic block as a template.
-
-Edit the existing example blocks in the `blocks` directory. Unfortunately it sucks right now and you'll have to `npm run build` after each change.
+You can create a new block just by creating a new js file in the `blocks` directory. Once you make a change, `npm run build` to rebuild the blocks onto the server. You can also `npm run watch` in a separate terminal window to automatically rebuild when you save your new block.
 
 Using React Native also allows the app to run on iOS, Android and Web out of the box, rather than having different code injection strategies per platform.
+
+### Debugging
+
+This section describes some common errors when creating new blocks.
+- Open Chrome Developer Tools Javascript Console (View->Developer->Javascript Console) to see the errors
+- Make sure that the blocks built with your latest changes! The building console will spit out errors if the block won't compile.
 
 ### Architecture
 [work in progress]
