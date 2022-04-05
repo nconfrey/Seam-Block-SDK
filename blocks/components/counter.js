@@ -23,7 +23,7 @@ const Counter = () => {
     const user2 = owners[1]
     return (
         <Card>
-            <View style={{ flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between" }}>
+            <View style={{ flexDirection: "column", alignItems: "center", justifyContent: "space-between" }}>
                 <Text>{user1.name + "'s and " + user2.name + "'s button."}</Text>
                 <Button onPress={() => {setCount(count + 1); setBlockData("count", count + 1)}} title="Press Me!" />
                 <Text>Pressed {count} times!</Text>
