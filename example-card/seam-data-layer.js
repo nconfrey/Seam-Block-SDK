@@ -28,3 +28,18 @@ export async function getBlockData(key) {
         // error reading value
     }
 }
+
+// Takes in an image file and uploads it to the database
+export async function putFile(name, file) {
+    // In production, this will upload to the filestore
+    console.log("Putting file at: " + name)
+}
+
+// Returns the download url of an image at the name. If it doesn't exist, returns null
+export async function getFile(name) {
+    // In production, this will fetch from the filestore.
+    const exampleImages = {"sample1": "https://pbs.twimg.com/profile_images/1498743622581121026/JatkpfN4_400x400.jpg",
+                           "sample2": "" // add your example images here!
+                        }
+    return exampleImages[name]
+}
