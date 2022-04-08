@@ -3940,6 +3940,14 @@
   "resolved" "https://registry.npmjs.org/expo-location/-/expo-location-10.0.0.tgz"
   "version" "10.0.0"
 
+"expo-modules-core@^0.6.5":
+  "integrity" "sha512-h/9+SJ3m8XkDUV1QrPO8WeXaeRYWLBJrOqhokDyhgWUYSqe6JOuRx1ZkoGq/GmTiwjouRDbXPsXUBiU9HWLYyA=="
+  "resolved" "https://registry.npmjs.org/expo-modules-core/-/expo-modules-core-0.6.5.tgz"
+  "version" "0.6.5"
+  dependencies:
+    "compare-versions" "^3.4.0"
+    "invariant" "^2.2.4"
+
 "expo-permissions@^13.1.1":
   "integrity" "sha512-vo2sDlxDJE+THLhUO7G8kMHYnNJoMvYjurFNRvHjEvZAUvFmRgulejr8HlzCpb820brXNg+QWalZCtyA5oQkqg=="
   "resolved" "https://registry.npmjs.org/expo-permissions/-/expo-permissions-13.1.1.tgz"
