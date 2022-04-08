@@ -6,6 +6,9 @@ import * as ReactNavigationNative from "@react-navigation/native";
 import * as Icons from "react-native-vector-icons";
 import * as Database from "./seam-data-layer";
 import * as Owners from "./seam-owners-api";
+import * as ImagePicker from "expo-image-picker";
+import Constants from "expo-constants";
+import * as Permissions from "expo-permissions";
 const Packages = {
     "react": () => React,
     "react-native": () => ReactNative,
@@ -14,7 +17,10 @@ const Packages = {
     "@react-navigation/native": () => ReactNavigationNative,
     "react-native-vector-icons": () => Icons,
     "seam-data-layer": () => Database,
-    "seam-owners-api": () => Owners
+    "seam-owners-api": () => Owners,
+    "expo-image-picker": () => ImagePicker,
+    "expo-constants": () => Constants,
+    "expo-permissions": () => Permissions
 }
 
 
