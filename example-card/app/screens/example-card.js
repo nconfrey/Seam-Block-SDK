@@ -44,7 +44,7 @@ const ExampleCard = ({ navigation }) => {
                     <DynamicComponent __id="header" />
                     <DynamicComponent __id="counter" />
                     <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
-                        <View style={{ flex: 1 }}>
+                        <View>
                             <DynamicComponent __id="locket" flow="vertical" />
                         </View>
                         <View style={{ flex: 1 }}>
