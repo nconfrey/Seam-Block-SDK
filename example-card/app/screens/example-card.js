@@ -43,6 +43,7 @@ const ExampleCard = ({ navigation }) => {
                 <View style={{ paddingVertical: 15 }}>
                     <DynamicComponent __id="header" />
                     <DynamicComponent __id="counter" />
+                    <DynamicComponent __id="spotify" />
                     <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                         <View>
                             <DynamicComponent __id="locket" flow="vertical" />
