@@ -2,8 +2,10 @@
 ### 🚧 NOTE: This SDK is in active development 🚧
 Development tools to create blocks for the Seam social platform.
 
+To see a more interactive demo of the Seam Card experience, [checkout this demo](https://seam-card-demo-459e.vercel.app/).
+
 ### What is Seam?
-Seam is the first community developed social network and social layer for web3. See more at [seam.contact](www.seam.contact).
+Seam is the first community developed social network. See more at [seam.contact](https://www.seam.contact/).
 
 # Developing Blocks
 This repo will contain everything you need to make your first block that will run on Seam. Under the hood, blocks are just React components.
@@ -56,4 +58,4 @@ There are two major pieces to making Blocks work: The Block Server, and the App.
 To simulate this in the SDK, there is a Block Server (hosted by `http-server`) so that the example card can pull from this remote server and simulate the dependency injection. The example card will fetch components on-demand from the block server, and then render them in the existing react native app.
 
 ### Licenses and Thanks
-Much of the initial architecture is thanks to (Sarath's blog article "Lazy loading React Native components from a server.")[https://sarathkcm.dev/blog/lazy-loading-react-native-components-from-a-server]
+Much of the initial architecture is thanks to [Sarath's blog article "Lazy loading React Native components from a server."](https://sarathkcm.dev/blog/lazy-loading-react-native-components-from-a-server).
